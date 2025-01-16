@@ -2,13 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name="HDR-Grouper",
-    version="1.0.0",
+    version="0.0.10",
     description="A Python tool to organize HDR photo sets by grouping NEF files based on EXIF metadata.",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
     author="Your Name",
     author_email="",
-    url="https://github.com/yourusername/HDR-Grouper",
+    url="https://github.com/MasterCard007/Nikon_HDR-Grouper/",
     packages=find_packages(),
     py_modules=["HDR_Grouper_v10"],
     install_requires=[
