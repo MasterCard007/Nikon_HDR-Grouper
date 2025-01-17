@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="HDR-Grouper",
-    version="0.0.10",
+    version="0.0.23",
     description="A Python tool to organize HDR photo sets by grouping NEF files based on EXIF metadata.",
     long_description=open("README.md", "r").read(),
     long_description_content_type="text/markdown",
