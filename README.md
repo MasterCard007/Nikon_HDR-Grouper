@@ -14,6 +14,8 @@ The **HDR Grouper Script** is a Python tool designed to help photographers organ
 - Organizes HDR groups into separate subfolders (e.g., `HDR_01`, `HDR_02`).
 - Logs skipped files that lack necessary EXIF data.
 - Includes progress indicators and error handling.
+- Automatically retries EXIF extraction for certain error cases.
+- Improved handling of edge cases like misconfigured file metadata.
 
 ---
 
@@ -47,7 +49,7 @@ Download the script to your local machine.
 ### 2. Run the Script
 Run the script using Python:
 ```bash
-python HDR_Grouper_v10.py
+python HDR_Grouper_v13.py
 ```
 
 ### 3. Provide the Folder Path
@@ -73,12 +75,14 @@ Enter the folder path to scan for NEF files: /path/to/your/folder
 ## Error Handling
 - Files without required EXIF data are skipped and logged.
 - Groups with no variation in exposure bias or insufficient photos are ignored.
+- Added handling for partial groupings and warnings when folder permissions are restricted.
 
 ---
 
 ## Limitations
 - Designed specifically for NEF files with valid EXIF metadata.
 - Assumes consistent camera settings for HDR shooting (e.g., exposure bracketing).
+- Customizable time intervals and grouping criteria are not yet implemented.
 
 ---
 
